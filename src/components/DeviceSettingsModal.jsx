@@ -302,13 +302,13 @@ export default function DeviceSettingsModal({
                   style={{ width: '100%', accentColor: '#38bdf8', cursor: 'pointer' }}
                 />
                 <div style={{ fontSize: '10px', color: '#64748b', marginTop: '4px' }}>
-                  Level volume headphone & monitor
+                  Headphone &amp; monitor output level
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Section 3: Hardware Diagnostics */}
+          {/* Section 3: Hardware Target & Photo */}
           <div style={{
             display: 'flex',
             alignItems: 'center',
@@ -320,8 +320,25 @@ export default function DeviceSettingsModal({
             color: '#94a3b8',
             border: '1px solid rgba(255, 255, 255, 0.06)'
           }}>
-            <div>
-              <span style={{ color: '#cbd5e1' }}>Hardware Target:</span> {currentDevice?.name || 'Sonicake Pocket Master'} (QME20)
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <img 
+                src="/pocket_master_device.png" 
+                alt="Sonicake Pocket Master"
+                style={{
+                  height: '38px',
+                  width: 'auto',
+                  objectFit: 'contain',
+                  filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.8))'
+                }}
+              />
+              <div>
+                <div style={{ fontWeight: 800, color: '#f8fafc' }}>
+                  Sonicake Pocket Master (QME-20)
+                </div>
+                <div style={{ fontSize: '10px', color: '#64748b', marginTop: '2px' }}>
+                  Class-Compliant USB MIDI &amp; Bluetooth LE Audio Suite
+                </div>
+              </div>
             </div>
             <button
               onClick={onClose}
@@ -330,7 +347,7 @@ export default function DeviceSettingsModal({
                 border: '1px solid rgba(255, 255, 255, 0.12)',
                 color: '#f8fafc',
                 borderRadius: '5px',
-                padding: '5px 16px',
+                padding: '6px 18px',
                 fontSize: '11px',
                 fontWeight: 700,
                 cursor: 'pointer'

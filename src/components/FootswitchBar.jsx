@@ -163,22 +163,6 @@ export default function FootswitchBar({
                 }}
                 title={`Press key ${keyNum} on keyboard or click to select preset ${slot} (${pName})`}
               >
-                {/* Footswitch Number / Keybind Shortcut Badge */}
-                <div style={{
-                  fontSize: '9px',
-                  fontWeight: 800,
-                  fontFamily: 'var(--font-numbers)',
-                  color: isActive ? haloColor : '#94a3b8',
-                  background: isActive ? `${haloColor}22` : '#0b0e15',
-                  border: `1px solid ${isActive ? haloColor : 'rgba(255, 255, 255, 0.12)'}`,
-                  borderRadius: '4px',
-                  padding: '1px 6px',
-                  letterSpacing: '0.6px',
-                  boxShadow: isActive ? `0 0 8px ${haloColor}40` : 'none',
-                  transition: 'all 0.15s ease'
-                }}>
-                  KEY {keyNum}
-                </div>
 
                 {/* Heavy-Duty Metal Plunger Assembly */}
                 <div style={{
@@ -298,9 +282,6 @@ export default function FootswitchBar({
           {isUser ? 'USER PRESETS' : 'FACTORY PRESETS'}
         </div>
         <div>SLOT {isUser ? currentPresetIndex + 1 : currentPresetIndex - 49} / 50</div>
-        <div style={{ fontSize: '9px', color: '#64748b', marginTop: '2px', fontFamily: 'var(--font-sans)', fontWeight: 600 }}>
-          1-4 Stomp | Up/Down Bank
-        </div>
       </div>
     </div>
   );

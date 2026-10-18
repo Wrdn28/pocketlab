@@ -1,11 +1,12 @@
 import React from 'react';
-import { 
-  Sliders, 
-  ChevronLeft, 
-  ChevronRight, 
-  Save, 
-  Radio, 
-  Usb
+import {
+  Sliders,
+  ChevronLeft,
+  ChevronRight,
+  Save,
+  Radio,
+  Usb,
+  HelpCircle
 } from 'lucide-react';
 
 export default function Header({
@@ -21,6 +22,7 @@ export default function Header({
   onOpenTuner,
   onOpenDrum,
   onOpenSettings,
+  onOpenGuide,
   onSavePreset,
   onOpenPresetsDrawer,
   masterVolume,
@@ -28,8 +30,8 @@ export default function Header({
 }) {
   const isUserSlot = currentPresetIndex < 50;
   // Authentic Pocket Master slot code: P01-P50 or F01-F50
-  const slotDisplay = currentSlotCode || (isUserSlot 
-    ? `P${String(currentPresetIndex + 1).padStart(2, '0')}` 
+  const slotDisplay = currentSlotCode || (isUserSlot
+    ? `P${String(currentPresetIndex + 1).padStart(2, '0')}`
     : `F${String(currentPresetIndex - 49).padStart(2, '0')}`);
   const slotNumber = isUserSlot ? currentPresetIndex + 1 : currentPresetIndex - 49;
   const slotBankType = isUserSlot ? 'USER' : 'FACTORY';
@@ -47,40 +49,72 @@ export default function Header({
       justifyContent: 'space-between',
       gap: '16px',
       position: 'relative',
+      minHeight: '54px',
       zIndex: 20
     }}>
-      {/* Brand: Clean Industrial PocketLab Badge */}
+      {/* Brand: Clean Industrial PocketLab Badge with Studio DSP Emblem */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
         <div style={{
-          background: '#0d0f17',
-          padding: '6px 14px',
-          borderRadius: '6px',
-          border: '1px solid rgba(255, 255, 255, 0.12)'
+          background: 'linear-gradient(180deg, #141824 0%, #0c0e15 100%)',
+          padding: '6px 14px 6px 9px',
+          borderRadius: '8px',
+          border: '1px solid rgba(255, 255, 255, 0.12)',
+          boxShadow: '0 4px 14px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.1)',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '11px'
         }}>
-          <div style={{ 
-            fontFamily: 'var(--font-display)', 
-            fontWeight: 900, 
-            fontSize: '15px', 
-            letterSpacing: '2px',
-            color: '#f8fafc',
-            lineHeight: 1.1
+          {/* Studio Audio DSP / Tube Waveform Emblem */}
+          <div style={{
+            width: '32px',
+            height: '32px',
+            borderRadius: '6px',
+            background: 'linear-gradient(135deg, #1c2234 0%, #0d1017 100%)',
+            border: '1px solid rgba(245, 158, 11, 0.45)',
+            boxShadow: '0 0 10px rgba(245, 158, 11, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.15)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexShrink: 0
           }}>
-            POCKETLAB
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 14V10" stroke="#f59e0b" strokeWidth="2.2" strokeLinecap="round" />
+              <path d="M8 17V7" stroke="#fbbf24" strokeWidth="2.2" strokeLinecap="round" />
+              <path d="M12 21V3" stroke="#38bdf8" strokeWidth="2.4" strokeLinecap="round" />
+              <path d="M16 17V7" stroke="#fbbf24" strokeWidth="2.2" strokeLinecap="round" />
+              <path d="M20 14V10" stroke="#f59e0b" strokeWidth="2.2" strokeLinecap="round" />
+            </svg>
           </div>
-          <div style={{ 
-            fontSize: '9px', 
-            color: '#94a3b8', 
-            letterSpacing: '1px', 
-            fontWeight: 700,
-            marginTop: '2px'
-          }}>
-            SONICAKE POCKET MASTER
+
+          <div>
+            <div style={{
+              fontFamily: 'var(--font-display)',
+              fontWeight: 900,
+              fontSize: '15px',
+              letterSpacing: '2px',
+              color: '#f8fafc',
+              lineHeight: 1.1
+            }}>
+              POCKETLAB
+            </div>
+            <div style={{
+              fontSize: '9px',
+              color: '#94a3b8',
+              letterSpacing: '1px',
+              fontWeight: 700,
+              marginTop: '2px'
+            }}>
+              SONICAKE POCKET MASTER
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Center: Authentic Pocket Master Digital OLED Preset Display */}
+      {/* Center: Authentic Pocket Master Digital OLED Preset Display (Pinned Dead-Center) */}
       <div style={{
+        position: 'absolute',
+        left: '50%',
+        transform: 'translateX(-50%)',
         display: 'flex',
         alignItems: 'center',
         gap: '8px',
@@ -88,10 +122,11 @@ export default function Header({
         padding: '5px 10px',
         borderRadius: '6px',
         border: '1px solid rgba(255, 255, 255, 0.12)',
-        boxShadow: 'inset 0 2px 6px rgba(0,0,0,0.8)'
+        boxShadow: 'inset 0 2px 6px rgba(0,0,0,0.8)',
+        zIndex: 10
       }}>
         {/* Previous Preset Arrow */}
-        <button 
+        <button
           onClick={onPrevPreset}
           style={{
             background: '#1a1e2a',
@@ -111,7 +146,7 @@ export default function Header({
         </button>
 
         {/* OLED Screen */}
-        <div 
+        <div
           onClick={onOpenPresetsDrawer}
           style={{
             cursor: 'pointer',
@@ -126,10 +161,10 @@ export default function Header({
         >
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
             {/* Slot Code (P01..P50 / F01..F50) */}
-            <span style={{ 
-              fontFamily: 'var(--font-numbers)', 
-              fontWeight: 900, 
-              color: isUserSlot ? '#38bdf8' : '#fbbf24', 
+            <span style={{
+              fontFamily: 'var(--font-numbers)',
+              fontWeight: 900,
+              color: isUserSlot ? '#38bdf8' : '#fbbf24',
               fontSize: '18px',
               letterSpacing: '1px'
             }}>
@@ -137,10 +172,10 @@ export default function Header({
             </span>
 
             {/* Preset Name */}
-            <span style={{ 
+            <span style={{
               fontFamily: 'var(--font-display)',
-              fontWeight: 800, 
-              fontSize: '13px', 
+              fontWeight: 800,
+              fontSize: '13px',
               color: '#f8fafc',
               maxWidth: '160px',
               whiteSpace: 'nowrap',
@@ -152,19 +187,19 @@ export default function Header({
             </span>
           </div>
 
-          <div style={{ 
-            fontSize: '9px', 
-            color: '#64748b', 
-            marginTop: '1px', 
-            letterSpacing: '1px', 
-            fontWeight: 700 
+          <div style={{
+            fontSize: '9px',
+            color: '#64748b',
+            marginTop: '1px',
+            letterSpacing: '1px',
+            fontWeight: 700
           }}>
             {slotBankType} PRESET {String(slotNumber).padStart(2, '0')} / 50
           </div>
         </div>
 
         {/* Next Preset Arrow */}
-        <button 
+        <button
           onClick={onNextPreset}
           style={{
             background: '#1a1e2a',
@@ -184,7 +219,7 @@ export default function Header({
         </button>
 
         {/* Save Preset Button */}
-        <button 
+        <button
           onClick={onSavePreset}
           style={{
             background: '#1a1e2a',
@@ -207,7 +242,7 @@ export default function Header({
       </div>
 
       {/* Right Controls: Harmonized Studio Gear Buttons */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginLeft: 'auto' }}>
         {/* Tuner Hardware Button */}
         <button
           onClick={onOpenTuner}
@@ -254,13 +289,36 @@ export default function Header({
           <span>GLOBAL</span>
         </button>
 
+        {/* User Guide & Shortcuts Modal Button */}
+        <button
+          onClick={onOpenGuide}
+          style={{
+            background: '#1a1e2a',
+            border: '1px solid rgba(255, 255, 255, 0.12)',
+            color: '#e2e8f0',
+            borderRadius: '6px',
+            padding: '6px 12px',
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.5px',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px'
+          }}
+          title="User Guide & Keyboard Shortcuts (?)"
+        >
+          <HelpCircle size={13} />
+          <span>GUIDE</span>
+        </button>
+
         {/* USB Connection Status Button (Clean, No Circular AI Dots) */}
         <button
           onClick={onOpenConnectModal}
           style={{
             background: connectionStatus.connected ? '#152230' : '#1a1e2a',
-            border: connectionStatus.connected 
-              ? '1px solid rgba(56, 189, 248, 0.4)' 
+            border: connectionStatus.connected
+              ? '1px solid rgba(56, 189, 248, 0.4)'
               : '1px solid rgba(255, 255, 255, 0.12)',
             color: connectionStatus.connected ? '#38bdf8' : '#94a3b8',
             borderRadius: '6px',

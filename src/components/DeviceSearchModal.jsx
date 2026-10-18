@@ -486,8 +486,33 @@ export default function DeviceSearchModal({
                   Sonicake Pocket Master
                 </span>
               </div>
-              <div style={{ fontSize: '11px', color: '#94a3b8', lineHeight: '1.5', marginBottom: '12px' }}>
+              <div style={{ fontSize: '11px', color: '#94a3b8', lineHeight: '1.5', marginBottom: '10px' }}>
                 Guitar multi-effects processor featuring 100 presets (50 User P01-P50 & 50 Factory F01-F50), Neural Amp Modeler (NAM A2), and cabinet IR loader.
+              </div>
+
+              {/* Hardware Unit Authentic Photo */}
+              <div style={{
+                background: 'radial-gradient(ellipse at center, rgba(30, 41, 59, 0.7) 0%, rgba(10, 13, 22, 0.96) 100%)',
+                borderRadius: '8px',
+                padding: '12px 10px',
+                border: '1px solid rgba(255, 255, 255, 0.08)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginBottom: '12px',
+                boxShadow: 'inset 0 2px 10px rgba(0,0,0,0.8), 0 4px 14px rgba(0,0,0,0.5)'
+              }}>
+                <img 
+                  src="/pocket_master_device.png" 
+                  alt="Sonicake Pocket Master Hardware Unit"
+                  style={{
+                    maxWidth: '100%',
+                    height: 'auto',
+                    maxHeight: '135px',
+                    objectFit: 'contain',
+                    filter: 'drop-shadow(0 10px 18px rgba(0,0,0,0.9))'
+                  }} 
+                />
               </div>
             </div>
 

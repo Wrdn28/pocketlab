@@ -3,6 +3,22 @@ import { Power, ArrowLeft, ArrowRight, Check, Volume2, Lock, Zap } from 'lucide-
 import { FIXED_CORE_MODULES } from '../services/pocketMasterProtocol';
 import { getGp200ChainIcon } from '../services/gp200Assets';
 
+export const MODULE_SHORTCUT_KEYS = {
+  NR: 'N',
+  FX1: 'X',
+  DRV: 'D',
+  DST: 'D',
+  AMP: 'A',
+  Clone: 'A',
+  IR: 'I',
+  CAB: 'I',
+  EQ: 'E',
+  FX2: 'M',
+  MOD: 'M',
+  DLY: 'L',
+  RVB: 'R'
+};
+
 export default function EffectChain({
   modules,
   selectedModuleIndex,
@@ -41,21 +57,6 @@ export default function EffectChain({
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
           <span style={{ fontSize: '11px', fontWeight: 900, color: '#f1f5f9', letterSpacing: '1.2px' }}>
             SIGNAL ROUTING CHAIN
-          </span>
-
-          <span style={{ 
-            fontSize: '10px', 
-            background: '#151922', 
-            border: '1px solid rgba(255, 255, 255, 0.12)',
-            color: '#94a3b8',
-            padding: '2px 8px',
-            borderRadius: '4px',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '4px',
-            fontWeight: 700
-          }}>
-            <Lock size={10} /> {'Fixed Core: DRV -> AMP -> IR -> EQ'}
           </span>
 
           {isCloneActive && (
@@ -241,7 +242,7 @@ export default function EffectChain({
                         color: isEnabled ? 'var(--accent-amber)' : '#64748b',
                         transition: 'all 0.15s ease'
                       }}
-                      title={isEnabled ? 'Bypass Module' : 'Aktifkan Module'}
+                      title={isEnabled ? 'Bypass Module' : 'Enable Module'}
                     >
                       <Power size={10} />
                     </button>
@@ -329,7 +330,7 @@ export default function EffectChain({
                           display: 'flex',
                           alignItems: 'center'
                         }}
-                        title="Pindah ke Kiri"
+                        title="Move Left"
                       >
                         <ArrowLeft size={9} />
                       </button>
@@ -348,7 +349,7 @@ export default function EffectChain({
                           display: 'flex',
                           alignItems: 'center'
                         }}
-                        title="Pindah ke Kanan"
+                        title="Move Right"
                       >
                         <ArrowRight size={9} />
                       </button>

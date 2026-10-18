@@ -59,8 +59,27 @@ While official mobile companion apps provide basic tone adjustments on small tou
 - Audio Mute toggle for silent live stage tuning or Audio Thru mode.
 
 ### Hands-On Keyboard Shortcuts
-- Quick footswitch and preset slot selection via number keys (`1`, `2`, `3`, `4`).
-- Arrow key navigation for fast preset switching during practice or live performances.
+- **Direct Effect Bypass / Engage**:
+  - `N`: Toggle **Noise Gate** (`NR`)
+  - `X`: Toggle **Pre-FX / Compressor** (`FX1`)
+  - `D`: Toggle **Overdrive / Distortion** (`DRV`)
+  - `A`: Toggle **Amp Modeler / NAM Clone** (`AMP`)
+  - `I`: Toggle **Cabinet IR** (`IR`)
+  - `E`: Toggle **Equalizer** (`EQ`)
+  - `M` or `C`: Toggle **Modulation / FX2** (`FX2`)
+  - `L` or `Y`: Toggle **Delay** (`DLY`)
+  - `R`: Toggle **Reverb** (`RVB`)
+  - `Space`: Toggle bypass on currently selected module
+  - `[` and `]`: Navigate active module left/right
+- **Footswitches & Navigation**:
+  - Footswitch stomps via number keys (`1`, `2`, `3`, `4`).
+  - `B`: Toggle between User (`P01-P50`) and Factory (`F01-F50`) banks.
+  - Arrow keys (`Left` / `Right`): Step presets sequentially.
+  - Arrow keys (`Up` / `Down`): Step banks by 4 presets.
+  - `?` or `H`: Open / Close interactive User Guide & Shortcuts modal.
+  - `T`: Open / Close Chromatic Tuner.
+  - `P`: Open / Close Preset Library Drawer.
+  - `Escape`: Dismiss open dialogs or drawers.
 
 ---
 
@@ -320,17 +339,38 @@ For detailed Linux troubleshooting, see the [Linux Guide](LINUX_GUIDE.md).
 
 ## Keyboard Shortcuts
 
-| Key | Action |
-| :--- | :--- |
-| `1` | Select Footswitch Slot 1 |
-| `2` | Select Footswitch Slot 2 |
-| `3` | Select Footswitch Slot 3 |
-| `4` | Select Footswitch Slot 4 |
-| `ArrowUp` / `ArrowRight` | Jump to Next Preset |
-| `ArrowDown` / `ArrowLeft` | Jump to Previous Preset |
-| `T` | Open / Close Chromatic Tuner |
-| `P` | Open / Close Preset Library Drawer |
-| `Escape` | Close any active modal dialog |
+PocketLab features extensive hands-free keyboard shortcuts for live stage performance, rehearsal, and studio recording:
+
+### Effect Module Bypass / Engage
+| Key | Target Module | Description & Action |
+| :---: | :---: | :--- |
+| `N` | **NR** | Toggle **Noise Gate** threshold circuit |
+| `X` | **FX1** | Toggle **Pre-FX / Compressor / Boost / Wah** |
+| `D` | **DRV** | Toggle **Overdrive / Distortion / Fuzz** pedal |
+| `A` | **AMP** | Toggle **Guitar Amp Modeler / Neural Amp (NAM Clone)** |
+| `I` | **IR** | Toggle **Cabinet Impulse Response** processing |
+| `E` | **EQ** | Toggle **5-Band Graphic Equalizer** circuit |
+| `M` or `C` | **FX2** | Toggle **Modulation / Chorus / Flanger / Tremolo / Phaser** |
+| `L` or `Y` | **DLY** | Toggle **Delay / Echo** repeats |
+| `R` | **RVB** | Toggle **Reverb** space and ambient reflections |
+| `Space` | **Active Module** | Toggle bypass on whichever module is currently selected |
+| `[` / `]` | **Signal Chain** | Move selection to previous `[` or next `]` module in chain |
+
+### Footswitches, Banks & Navigation
+| Key | Target | Description & Action |
+| :---: | :---: | :--- |
+| `1`, `2`, `3`, `4` | Footswitches 1 - 4 | Stomp select preset slot in the active hardware bank group |
+| `Left` / `Right` | Prev / Next Preset | Step presets sequentially (1 by 1) |
+| `Up` / `Down` | Prev / Next Bank | Step bank group by 4 presets (also `PageUp` / `PageDown`) |
+| `B` | Bank Toggle | Switch between **User Bank** (`P01-P50`) and **Factory Bank** (`F01-F50`) |
+
+### Modals & Studio Utilities
+| Key | Utility | Description & Action |
+| :---: | :---: | :--- |
+| `?` or `H` | User Guide | Open / close interactive User Guide & Shortcuts modal |
+| `T` | Chromatic Tuner | Open / close chromatic tuner needle display |
+| `P` | Preset Drawer | Open / close 100-preset library and backup manager |
+| `Escape` | Dismiss | Close any open modal dialog or drawer |
 
 ---
 

@@ -8,6 +8,7 @@ import TunerModal from './components/TunerModal';
 import PresetManager from './components/PresetManager';
 import DeviceSearchModal from './components/DeviceSearchModal';
 import DeviceSettingsModal from './components/DeviceSettingsModal';
+import GuideModal from './components/GuideModal';
 
 import { SUPPORTED_DEVICES, loadDeviceModules, FALLBACK_MODULES, getAmpModuleDefinition } from './services/deviceData';
 import { bleService } from './services/bleService';
@@ -87,6 +88,7 @@ export default function App() {
   const [isPresetsDrawerOpen, setIsPresetsDrawerOpen] = useState(false);
   const [isConnectModalOpen, setIsConnectModalOpen] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [isGuideOpen, setIsGuideOpen] = useState(false);
 
   // Load device modules when selected device changes
   useEffect(() => {
@@ -654,6 +656,53 @@ export default function App() {
         return;
       }
 
+      // Direct Module Bypass Shortcuts:
+      // N: Noise Gate (NR)
+      // X: Pre-FX / Compressor / Boost (FX1)
+      // D: Drive / Distortion (DRV)
+      // A: Amp Modeler / NAM Clone (AMP)
+      // I: Cabinet Impulse Response (IR)
+      // E: Equalizer (EQ)
+      // M or C: Modulation / FX2 (FX2)
+      // L or Y: Delay (DLY)
+      // R: Reverb (RVB)
+      const keyUpper = e.key.toUpperCase();
+      let targetModuleKey = null;
+
+      if (keyUpper === 'N') targetModuleKey = 'NR';
+      else if (keyUpper === 'X') targetModuleKey = 'FX1';
+      else if (keyUpper === 'D') targetModuleKey = 'DRV';
+      else if (keyUpper === 'A') targetModuleKey = 'AMP';
+      else if (keyUpper === 'I') targetModuleKey = 'IR';
+      else if (keyUpper === 'E') targetModuleKey = 'EQ';
+      else if (keyUpper === 'M' || keyUpper === 'C') targetModuleKey = 'FX2';
+      else if (keyUpper === 'L' || keyUpper === 'Y') targetModuleKey = 'DLY';
+      else if (keyUpper === 'R') targetModuleKey = 'RVB';
+
+      if (targetModuleKey) {
+        e.preventDefault();
+        const modIdx = modules.findIndex(m => {
+          if (!m) return false;
+          const n = (m.name || '').toUpperCase();
+          if (targetModuleKey === 'NR') return n === 'NR' || m.moduleId === 0;
+          if (targetModuleKey === 'FX1') return n === 'FX1' || m.moduleId === 1;
+          if (targetModuleKey === 'DRV') return n === 'DRV' || n === 'DST' || m.moduleId === 2;
+          if (targetModuleKey === 'AMP') return n === 'AMP' || n === 'CLONE' || m.moduleId === 3 || m.moduleId === 9;
+          if (targetModuleKey === 'IR') return n === 'IR' || n === 'CAB' || m.moduleId === 4;
+          if (targetModuleKey === 'EQ') return n === 'EQ' || m.moduleId === 5;
+          if (targetModuleKey === 'FX2') return n === 'FX2' || n === 'MOD' || m.moduleId === 6;
+          if (targetModuleKey === 'DLY') return n === 'DLY' || m.moduleId === 7;
+          if (targetModuleKey === 'RVB') return n === 'RVB' || m.moduleId === 8;
+          return false;
+        });
+
+        if (modIdx !== -1) {
+          handleToggleModuleBypass(modIdx);
+          setSelectedModuleIndex(modIdx);
+        }
+        return;
+      }
+
       // Spacebar: Toggle Bypass on currently selected module
       if (e.key === ' ') {
         e.preventDefault();
@@ -687,12 +736,20 @@ export default function App() {
         return;
       }
 
+      // '?' or 'h' or 'H': Toggle User Guide Modal
+      if (e.key === '?' || e.key === 'h' || e.key === 'H') {
+        e.preventDefault();
+        setIsGuideOpen(prev => !prev);
+        return;
+      }
+
       // Escape: Close open modals
       if (e.key === 'Escape') {
         setIsTunerOpen(false);
         setIsPresetsDrawerOpen(false);
         setIsConnectModalOpen(false);
         setIsSettingsOpen(false);
+        setIsGuideOpen(false);
         return;
       }
     };
@@ -975,6 +1032,7 @@ export default function App() {
           setIsSettingsOpen(true);
           handleRefreshGlobals();
         }}
+        onOpenGuide={() => setIsGuideOpen(true)}
         onSavePreset={handleSavePreset}
         onOpenPresetsDrawer={() => setIsPresetsDrawerOpen(true)}
         masterVolume={globalSettings.globalVolume !== undefined ? globalSettings.globalVolume : masterVolume}
@@ -1079,6 +1137,11 @@ export default function App() {
         globalSettings={globalSettings}
         onUpdateGlobalParam={handleUpdateGlobalParam}
         onRefreshGlobals={handleRefreshGlobals}
+      />
+
+      <GuideModal
+        isOpen={isGuideOpen}
+        onClose={() => setIsGuideOpen(false)}
       />
     </div>
   );
