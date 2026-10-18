@@ -1,0 +1,36 @@
+# Desktop Electron builds and unpacked binaries (588MB+)
+release/
+build/
+dist/
+out/
+*.exe
+*.AppImage
+*.nsis*
+*.7z
+*.zip
+*.tar.gz
+*.dmg
+*.deb
+*.rpm
+
+# Node & Package Managers
+node_modules/
+.pnp
+.pnp.js
+
+# Version Control & Vercel state
+.git/
+.vercel/
+
+# Logs & Temporary files
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+*.sw?
+
+# Desktop platform docs not needed for runtime
+LINUX_GUIDE.md
+WINDOWS_GUIDE.md
