@@ -1,0 +1,990 @@
+{
+    "modules": [
+        {
+            "name": "FX1",
+            "moduleId": 0,
+            "module": [
+                {
+                    "fxid": 33554433,
+                    "fxtitle": "Kazo Syn 1",
+                    "name": "Kazo Syn 1",
+                    "type": "\u5408\u6210\u5668",
+                    "origin": "",
+                    "mark": "",
+                    "associationId": "",
+                    "remark": "SQUARE = 0,\nSAW = 1,\nERHU = 2,\nSUONA = 3,\nFLUTE = 4,\nHULUSI = 5,\nXUN = 6,\nMOSQUITO = 7,\nHORN = 8,\nCLARINET = 9,\nCELLO = 10,",
+                    "descriptionCn": "",
+                    "descriptionEn": "",
+                    "summaryCn": "",
+                    "summaryEn": "",
+                    "alg": [
+                        {
+                            "name": "Instrument",
+                            "algId": "0",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "-1",
+                            "defaultValue": "SQUARE (0)",
+                            "valueRange": "SQUARE,SAW,ERHU,SUONA,FLUTE,HULUSI,XUN,MOSQUITO,HORN,CLARINET,CELLO,BASSOON,TUBA,DOUBLEBASS",
+                            "min": 0,
+                            "max": 13,
+                            "step": "1",
+                            "code": "ValToStr_195",
+                            "widgetType": 2,
+                            "show": [
+                                {
+                                    "code": "ValToStr_195",
+                                    "min": "0",
+                                    "max": "10",
+                                    "range": "0~10",
+                                    "showValue": "SQUARE, SAW, ERHU, SUONA, FLUTE, HULUSI, XUN, MOSQUITO, HORN, CLARINET, CELLO, BASSOON, TUBA, DOUBLEBASS"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Quantize",
+                            "algId": "1",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "-1",
+                            "defaultValue": "On (1)",
+                            "valueRange": "Off/On",
+                            "min": "0",
+                            "max": "1",
+                            "step": "1",
+                            "code": "ValToStr_000",
+                            "widgetType": 1,
+                            "show": [
+                                {
+                                    "code": "ValToStr_000",
+                                    "min": "0",
+                                    "max": "1",
+                                    "range": "0~1",
+                                    "showValue": "Off/On"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Scale",
+                            "algId": "2",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "-1",
+                            "defaultValue": "0",
+                            "valueRange": "Major,Minor,Chromatic",
+                            "min": "0",
+                            "max": "2",
+                            "step": "1",
+                            "code": "ValToStr_193",
+                            "widgetType": 2,
+                            "show": [
+                                {
+                                    "code": "ValToStr_193",
+                                    "min": "0",
+                                    "max": "2",
+                                    "range": "0~2",
+                                    "showValue": "Major, Minor,Chromatic"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Key",
+                            "algId": "3",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "C (0)",
+                            "valueRange": "C,C#,D,D#,E,F,F#,G,G#,A,A#,B",
+                            "min": "0",
+                            "max": "11",
+                            "step": "1",
+                            "code": "ValToStr_090",
+                            "widgetType": 2,
+                            "show": [
+                                {
+                                    "code": "ValToStr_090",
+                                    "min": "0",
+                                    "max": "11",
+                                    "range": "0~11",
+                                    "showValue": "C, C#, D, D#, E, F, F#, G, G#, A, A#, B"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Freedom",
+                            "algId": "4",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "-1",
+                            "defaultValue": "0",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Speed",
+                            "algId": "5",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "-1",
+                            "defaultValue": "50",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Octave",
+                            "algId": "6",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "Off (1)",
+                            "valueRange": "-2 Oct,-1 Oct,Off,+1 Oct,+2 Oct,+3 Oct",
+                            "min": 0,
+                            "max": 5,
+                            "step": "1",
+                            "code": "ValToStr_194",
+                            "widgetType": 2,
+                            "show": [
+                                {
+                                    "code": "ValToStr_194",
+                                    "min": "0",
+                                    "max": "5",
+                                    "range": "0~5",
+                                    "showValue": "-2 Oct, -1 Oct, Off, +1 Oct, +2 Oct, +3 Oct"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "FC",
+                            "algId": "7",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "100",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Q",
+                            "algId": "8",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "FC-Follow",
+                            "algId": "9",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "FC-Release",
+                            "algId": "10",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+                        },
+                        {
+            "name": "EQ",
+            "moduleId": 1,
+            "module": [
+                {
+                    "fxid": 16777298,
+                    "fxtitle": "Para EQ 3",
+                    "name": "Kazo EQ",
+                    "type": "\u5747\u8861 EQ",
+                    "origin": "Original: MP-300 4-band parametric EQ",
+                    "mark": "",
+                    "associationId": "",
+                    "remark": "",
+                    "descriptionCn": "",
+                    "descriptionEn": "",
+                    "summaryCn": "",
+                    "summaryEn": "",
+                    "alg": [
+                        {
+                            "name": "Band 1",
+                            "algId": "0",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "200Hz",
+                            "valueRange": "20Hz-2000Hz",
+                            "min": "20",
+                            "max": "2000",
+                            "step": "1",
+                            "code": "ValToStr_142",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_142",
+                                    "min": "20",
+                                    "max": "2000",
+                                    "range": "20~2000",
+                                    "showValue": "20Hz-2000Hz"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Q 1",
+                            "algId": "1",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0.71",
+                            "valueRange": "0.10-10.00",
+                            "min": "0.1",
+                            "max": "10",
+                            "step": "0.1",
+                            "code": "ValToStr_071",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_071",
+                                    "min": "0.1",
+                                    "max": "10",
+                                    "range": "0.1~10",
+                                    "showValue": "0.10-10.00"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Gain 1",
+                            "algId": "2",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0",
+                            "valueRange": "-12dB-+12dB",
+                            "min": "-12",
+                            "max": "12",
+                            "step": "1",
+                            "code": "ValToStr_070",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_070",
+                                    "min": "-12",
+                                    "max": "12",
+                                    "range": "-12~12",
+                                    "showValue": "-12dB - +12dB"
+                        }
+                    ]
+                        },
+                        {
+                            "name": "Band 2",
+                            "algId": "3",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "1000Hz",
+                            "valueRange": "100Hz-10000Hz",
+                            "min": "100",
+                            "max": "10000",
+                            "step": "1",
+                            "code": "ValToStr_144",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_144",
+                                    "min": "100",
+                                    "max": "10000",
+                                    "range": "100~10000",
+                                    "showValue": "100Hz-10000Hz"
+                }
+            ]
+        },
+        {
+                            "name": "Q 2",
+                            "algId": "4",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0.71",
+                            "valueRange": "0.10-10.00",
+                            "min": "0.1",
+                            "max": "10",
+                            "step": "0.1",
+                            "code": "ValToStr_071",
+                            "widgetType": 0,
+                            "show": [
+                {
+                                    "code": "ValToStr_071",
+                                    "min": "0.1",
+                                    "max": "10",
+                                    "range": "0.1~10",
+                                    "showValue": "0.10-10.00"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Gain 2",
+                            "algId": "5",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0",
+                            "valueRange": "-12dB-+12dB",
+                            "min": "-12",
+                            "max": "12",
+                            "step": "1",
+                            "code": "ValToStr_070",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_070",
+                                    "min": "-12",
+                                    "max": "12",
+                                    "range": "-12~12",
+                                    "showValue": "-12dB - +12dB"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Band 3",
+                            "algId": "6",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "4000Hz",
+                            "valueRange": "100Hz-10000Hz",
+                            "min": "100",
+                            "max": "10000",
+                            "step": "1",
+                            "code": "ValToStr_144",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_144",
+                                    "min": "100",
+                                    "max": "10000",
+                                    "range": "100~10000",
+                                    "showValue": "100Hz-10000Hz"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Q 3",
+                            "algId": "7",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0.71",
+                            "valueRange": "0.10-10.00",
+                            "min": "0.1",
+                            "max": "10",
+                            "step": "0.1",
+                            "code": "ValToStr_071",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_071",
+                                    "min": "0.1",
+                                    "max": "10",
+                                    "range": "0.1~10",
+                                    "showValue": "0.10-10.00"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Gain 3",
+                            "algId": "8",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0",
+                            "valueRange": "-12dB-+12dB",
+                            "min": "-12",
+                            "max": "12",
+                            "step": "1",
+                            "code": "ValToStr_070",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_070",
+                                    "min": "-12",
+                                    "max": "12",
+                                    "range": "-12~12",
+                                    "showValue": "-12dB - +12dB"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Band 4",
+                            "algId": "9",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "8000Hz",
+                            "valueRange": "200Hz-20000Hz",
+                            "min": "200",
+                            "max": "20000",
+                            "step": "1",
+                            "code": "ValToStr_147",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_147",
+                                    "min": "200",
+                                    "max": "20000",
+                                    "range": "200~20000",
+                                    "showValue": "200Hz-20000Hz"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Q 4",
+                            "algId": "10",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0.71",
+                            "valueRange": "0.10-10.00",
+                            "min": "0.1",
+                            "max": "10",
+                            "step": "0.1",
+                            "code": "ValToStr_071",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_071",
+                                    "min": "0.1",
+                                    "max": "10",
+                                    "range": "0.1~10",
+                                    "showValue": "0.10-10.00"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Gain 4",
+                            "algId": "11",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0",
+                            "valueRange": "-12dB-+12dB",
+                            "min": "-12",
+                            "max": "12",
+                            "step": "1",
+                            "code": "ValToStr_070",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_070",
+                                    "min": "-12",
+                                    "max": "12",
+                                    "range": "-12~12",
+                                    "showValue": "-12dB - +12dB"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Lo Shelf",
+                            "algId": "12",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0",
+                            "valueRange": "-12dB-+12dB",
+                            "min": "-12",
+                            "max": "12",
+                            "step": "1",
+                            "code": "ValToStr_070",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_070",
+                                    "min": "-12",
+                                    "max": "12",
+                                    "range": "-12~12",
+                                    "showValue": "-12dB - +12dB"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Hi Shelf",
+                            "algId": "13",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0",
+                            "valueRange": "-12dB-+12dB",
+                            "min": "-12",
+                            "max": "12",
+                            "step": "1",
+                            "code": "ValToStr_070",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_070",
+                                    "min": "-12",
+                                    "max": "12",
+                                    "range": "-12~12",
+                                    "showValue": "-12dB - +12dB"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Level",
+                            "algId": "14",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "50",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+                        }
+                    ]
+                }
+            ]
+                }
+            ]
+        },
+        {
+            "name": "FX2",
+            "moduleId": 2,
+            "module": [
+                {
+                    "fxid": 201326617,
+                    "fxtitle": "Kazo Verb",
+                    "name": "Kazo Verb",
+                    "type": "\u6df7\u54cd Reverb",
+                    "origin": "",
+                    "mark": "",
+                    "associationId": "",
+                    "remark": "",
+                    "descriptionCn": "",
+                    "descriptionEn": "",
+                    "summaryCn": "",
+                    "summaryEn": "",
+                    "alg": [
+                        {
+                            "name": "Mix",
+                            "algId": "0",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "30",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Decay",
+                            "algId": "1",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "50",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "LateVol",
+                            "algId": "2",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "50",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "EarlyVol",
+                            "algId": "3",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "50",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "HiDamp",
+                            "algId": "4",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Low Damp",
+                            "algId": "5",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Low Pass FC",
+                            "algId": "6",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "100",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Low Pass Q",
+                            "algId": "7",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Hi Pass FC",
+                            "algId": "8",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Hi Pass Q",
+                            "algId": "9",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+                        }
+                    ]
+                        },
+                        {
+                            "name": "Trail",
+                            "algId": "10",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0",
+                            "valueRange": "Off/On",
+                            "min": "0",
+                            "max": "1",
+                            "step": "1",
+                            "code": "ValToStr_000",
+                            "widgetType": 1,
+                            "show": [
+                                {
+                                    "code": "ValToStr_000",
+                                    "min": "0",
+                                    "max": "1",
+                                    "range": "0~1",
+                                    "showValue": "Off/On"
+                }
+            ]
+                        },
+                        {
+                            "name": "Freeze",
+                            "algId": "11",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0",
+                            "valueRange": "Off/On",
+                            "min": "0",
+                            "max": "1",
+                            "step": "1",
+                            "code": "ValToStr_000",
+                            "widgetType": 1,
+                            "show": [
+                                {
+                                    "code": "ValToStr_000",
+                                    "min": "0",
+                                    "max": "1",
+                                    "range": "0~1",
+                                    "showValue": "Off/On"
+        }
+    ]
+                        },
+                        {
+                            "name": "Mod Depth",
+                            "algId": "12",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+}
+                            ]
+                        },
+                        {
+                            "name": "Mod Speed",
+                            "algId": "13",
+                            "sync": "-1",
+                            "knobId": "-1",
+                            "exploreMode": "1",
+                            "defaultValue": "0",
+                            "valueRange": "0-100",
+                            "min": "0",
+                            "max": "100",
+                            "step": "1",
+                            "code": "ValToStr_021",
+                            "widgetType": 0,
+                            "show": [
+                                {
+                                    "code": "ValToStr_021",
+                                    "min": "0",
+                                    "max": "100",
+                                    "range": "0~100",
+                                    "showValue": "0-100"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

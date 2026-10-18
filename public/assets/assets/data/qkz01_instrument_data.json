@@ -1,0 +1,744 @@
+{
+    "EQ": {
+        "Custom": [
+            {
+                "name": "Band 1",
+                "algId": "0",
+                "value": "100"
+            },
+            {
+                "name": "Q 1",
+                "algId": "1",
+                "value": "0.71"
+            },
+            {
+                "name": "Gain 1",
+                "algId": "2",
+                "value": "-12"
+            },
+            {
+                "name": "Band 2",
+                "algId": "3",
+                "value": "1000"
+            },
+            {
+                "name": "Q 2",
+                "algId": "4",
+                "value": "0.71"
+            },
+            {
+                "name": "Gain 2",
+                "algId": "5",
+                "value": "-8"
+            },
+            {
+                "name": "Band 3",
+                "algId": "6",
+                "value": "4000"
+            },
+            {
+                "name": "Q 3",
+                "algId": "7",
+                "value": "0.71"
+            },
+            {
+                "name": "Gain 3",
+                "algId": "8",
+                "value": "-4"
+            },
+            {
+                "name": "Band 4",
+                "algId": "9",
+                "value": "8000"
+            },
+            {
+                "name": "Q 4",
+                "algId": "10",
+                "value": "0.71"
+            },
+            {
+                "name": "Gain 4",
+                "algId": "11",
+                "value": "0"
+            },
+            {
+                "name": "Lo Shelf",
+                "algId": "12",
+                "value": "4"
+            },
+            {
+                "name": "Hi Shelf",
+                "algId": "13",
+                "value": "8"
+            },
+            {
+                "name": "Level",
+                "algId": "14",
+                "value": "100"
+            },
+            {
+                "name": "index",
+                "algId": "15",
+                "value": "0"
+            }
+        ],
+        "Bass EQ": [
+            {
+                "name": "Band 1",
+                "algId": "0",
+                "value": "100"
+            },
+            {
+                "name": "Q 1",
+                "algId": "1",
+                "value": "0.71"
+            },
+            {
+                "name": "Gain 1",
+                "algId": "2",
+                "value": "-11"
+            },
+            {
+                "name": "Band 2",
+                "algId": "3",
+                "value": "1000"
+            },
+            {
+                "name": "Q 2",
+                "algId": "4",
+                "value": "0.71"
+            },
+            {
+                "name": "Gain 2",
+                "algId": "5",
+                "value": "-7"
+            },
+            {
+                "name": "Band 3",
+                "algId": "6",
+                "value": "4000"
+            },
+            {
+                "name": "Q 3",
+                "algId": "7",
+                "value": "0.71"
+            },
+            {
+                "name": "Gain 3",
+                "algId": "8",
+                "value": "-3"
+            },
+            {
+                "name": "Band 4",
+                "algId": "9",
+                "value": "8000"
+            },
+            {
+                "name": "Q 4",
+                "algId": "10",
+                "value": "0.71"
+            },
+            {
+                "name": "Gain 4",
+                "algId": "11",
+                "value": "1"
+            },
+            {
+                "name": "Lo Shelf",
+                "algId": "12",
+                "value": "5"
+            },
+            {
+                "name": "Hi Shelf",
+                "algId": "13",
+                "value": "9"
+            },
+            {
+                "name": "Level",
+                "algId": "14",
+                "value": "100"
+            },
+            {
+                "name": "index",
+                "algId": "15",
+                "value": "1"
+            }
+        ],
+        "Guitar EQ 1": [
+            {
+                "name": "Band 1",
+                "algId": "0",
+                "value": "150"
+            },
+            {
+                "name": "Q 1",
+                "algId": "1",
+                "value": "0.71"
+            },
+            {
+                "name": "Gain 1",
+                "algId": "2",
+                "value": "-10"
+            },
+            {
+                "name": "Band 2",
+                "algId": "3",
+                "value": "1000"
+            },
+            {
+                "name": "Q 2",
+                "algId": "4",
+                "value": "0.71"
+            },
+            {
+                "name": "Gain 2",
+                "algId": "5",
+                "value": "-6"
+            },
+            {
+                "name": "Band 3",
+                "algId": "6",
+                "value": "4000"
+            },
+            {
+                "name": "Q 3",
+                "algId": "7",
+                "value": "0.71"
+            },
+            {
+                "name": "Gain 3",
+                "algId": "8",
+                "value": "-2"
+            },
+            {
+                "name": "Band 4",
+                "algId": "9",
+                "value": "8000"
+            },
+            {
+                "name": "Q 4",
+                "algId": "10",
+                "value": "0.71"
+            },
+            {
+                "name": "Gain 4",
+                "algId": "11",
+                "value": "2"
+            },
+            {
+                "name": "Lo Shelf",
+                "algId": "12",
+                "value": "6"
+            },
+            {
+                "name": "Hi Shelf",
+                "algId": "13",
+                "value": "10"
+            },
+            {
+                "name": "Level",
+                "algId": "14",
+                "value": "100"
+            },
+            {
+                "name": "index",
+                "algId": "15",
+                "value": "2"
+            }
+        ],
+        "Guitar EQ 2": [
+            {
+                "name": "Band 1",
+                "algId": "0",
+                "value": "150"
+            },
+            {
+                "name": "Q 1",
+                "algId": "1",
+                "value": "0.71"
+            },
+            {
+                "name": "Gain 1",
+                "algId": "2",
+                "value": "-9"
+            },
+            {
+                "name": "Band 2",
+                "algId": "3",
+                "value": "1000"
+            },
+            {
+                "name": "Q 2",
+                "algId": "4",
+                "value": "0.71"
+            },
+            {
+                "name": "Gain 2",
+                "algId": "5",
+                "value": "-5"
+            },
+            {
+                "name": "Band 3",
+                "algId": "6",
+                "value": "4000"
+            },
+            {
+                "name": "Q 3",
+                "algId": "7",
+                "value": "0.71"
+            },
+            {
+                "name": "Gain 3",
+                "algId": "8",
+                "value": "-1"
+            },
+            {
+                "name": "Band 4",
+                "algId": "9",
+                "value": "8000"
+            },
+            {
+                "name": "Q 4",
+                "algId": "10",
+                "value": "0.71"
+            },
+            {
+                "name": "Gain 4",
+                "algId": "11",
+                "value": "3"
+            },
+            {
+                "name": "Lo Shelf",
+                "algId": "12",
+                "value": "7"
+            },
+            {
+                "name": "Hi Shelf",
+                "algId": "13",
+                "value": "11"
+            },
+            {
+                "name": "Level",
+                "algId": "14",
+                "value": "100"
+            },
+            {
+                "name": "index",
+                "algId": "15",
+                "value": "3"
+            }
+        ]
+    },
+    "FX2": {
+        "Custom": [
+            {
+                "name": "Mix",
+                "algId": "0",
+                "value": "0"
+            },
+            {
+                "name": "Decay",
+                "algId": "1",
+                "value": "0"
+            },
+            {
+                "name": "LateVol",
+                "algId": "2",
+                "value": "0"
+            },
+            {
+                "name": "EarlyVol",
+                "algId": "3",
+                "value": "0"
+            },
+            {
+                "name": "HiDamp",
+                "algId": "4",
+                "value": "0"
+            },
+            {
+                "name": "Low Damp",
+                "algId": "5",
+                "value": "0"
+            },
+            {
+                "name": "Low Pass FC",
+                "algId": "6",
+                "value": "0"
+            },
+            {
+                "name": "Low Pass Q",
+                "algId": "7",
+                "value": "0"
+            },
+            {
+                "name": "Hi Pass FC",
+                "algId": "8",
+                "value": "0"
+            },
+            {
+                "name": "Hi Pass Q",
+                "algId": "9",
+                "value": "0"
+            },
+            {
+                "name": "Trail",
+                "algId": "10",
+                "value": "0"
+            },
+            {
+                "name": "Freeze",
+                "algId": "11",
+                "value": "0"
+            },
+            {
+                "name": "Mod Depth",
+                "algId": "12",
+                "value": "0"
+            },
+            {
+                "name": "Mod Speed",
+                "algId": "13",
+                "value": "0"
+            },
+            {
+                "name": "Default Param",
+                "algId": "14",
+                "value": "0"
+            },
+            {
+                "name": "index",
+                "algId": "15",
+                "value": "0"
+            }
+        ],
+        "Funk": [
+            {
+                "name": "Mix",
+                "algId": "0",
+                "value": "100"
+            },
+            {
+                "name": "Decay",
+                "algId": "1",
+                "value": "100"
+            },
+            {
+                "name": "LateVol",
+                "algId": "2",
+                "value": "100"
+            },
+            {
+                "name": "EarlyVol",
+                "algId": "3",
+                "value": "100"
+            },
+            {
+                "name": "HiDamp",
+                "algId": "4",
+                "value": "100"
+            },
+            {
+                "name": "Low Damp",
+                "algId": "5",
+                "value": "100"
+            },
+            {
+                "name": "Low Pass FC",
+                "algId": "6",
+                "value": "100"
+            },
+            {
+                "name": "Low Pass Q",
+                "algId": "7",
+                "value": "100"
+            },
+            {
+                "name": "Hi Pass FC",
+                "algId": "8",
+                "value": "100"
+            },
+            {
+                "name": "Hi Pass Q",
+                "algId": "9",
+                "value": "100"
+            },
+            {
+                "name": "Trail",
+                "algId": "10",
+                "value": "100"
+            },
+            {
+                "name": "Freeze",
+                "algId": "11",
+                "value": "100"
+            },
+            {
+                "name": "Mod Depth",
+                "algId": "12",
+                "value": "100"
+            },
+            {
+                "name": "Mod Speed",
+                "algId": "13",
+                "value": "100"
+            },
+            {
+                "name": "Default Param",
+                "algId": "14",
+                "value": "0"
+            },
+            {
+                "name": "index",
+                "algId": "15",
+                "value": "1"
+            }
+        ],
+        "Jazz": [
+            {
+                "name": "Mix",
+                "algId": "0",
+                "value": "50"
+            },
+            {
+                "name": "Decay",
+                "algId": "1",
+                "value": "50"
+            },
+            {
+                "name": "LateVol",
+                "algId": "2",
+                "value": "50"
+            },
+            {
+                "name": "EarlyVol",
+                "algId": "3",
+                "value": "50"
+            },
+            {
+                "name": "HiDamp",
+                "algId": "4",
+                "value": "50"
+            },
+            {
+                "name": "Low Damp",
+                "algId": "5",
+                "value": "50"
+            },
+            {
+                "name": "Low Pass FC",
+                "algId": "6",
+                "value": "50"
+            },
+            {
+                "name": "Low Pass Q",
+                "algId": "7",
+                "value": "50"
+            },
+            {
+                "name": "Hi Pass FC",
+                "algId": "8",
+                "value": "50"
+            },
+            {
+                "name": "Hi Pass Q",
+                "algId": "9",
+                "value": "50"
+            },
+            {
+                "name": "Trail",
+                "algId": "10",
+                "value": "50"
+            },
+            {
+                "name": "Freeze",
+                "algId": "11",
+                "value": "50"
+            },
+            {
+                "name": "Mod Depth",
+                "algId": "12",
+                "value": "50"
+            },
+            {
+                "name": "Mod Speed",
+                "algId": "13",
+                "value": "50"
+            },
+            {
+                "name": "Default Param",
+                "algId": "14",
+                "value": "0"
+            },
+            {
+                "name": "index",
+                "algId": "15",
+                "value": "2"
+            }
+        ],
+        "Rock": [
+            {
+                "name": "Mix",
+                "algId": "0",
+                "value": "10"
+            },
+            {
+                "name": "Decay",
+                "algId": "1",
+                "value": "10"
+            },
+            {
+                "name": "LateVol",
+                "algId": "2",
+                "value": "10"
+            },
+            {
+                "name": "EarlyVol",
+                "algId": "3",
+                "value": "10"
+            },
+            {
+                "name": "HiDamp",
+                "algId": "4",
+                "value": "10"
+            },
+            {
+                "name": "Low Damp",
+                "algId": "5",
+                "value": "10"
+            },
+            {
+                "name": "Low Pass FC",
+                "algId": "6",
+                "value": "10"
+            },
+            {
+                "name": "Low Pass Q",
+                "algId": "7",
+                "value": "10"
+            },
+            {
+                "name": "Hi Pass FC",
+                "algId": "8",
+                "value": "10"
+            },
+            {
+                "name": "Hi Pass Q",
+                "algId": "9",
+                "value": "10"
+            },
+            {
+                "name": "Trail",
+                "algId": "10",
+                "value": "10"
+            },
+            {
+                "name": "Freeze",
+                "algId": "11",
+                "value": "10"
+            },
+            {
+                "name": "Mod Depth",
+                "algId": "12",
+                "value": "10"
+            },
+            {
+                "name": "Mod Speed",
+                "algId": "13",
+                "value": "10"
+            },
+            {
+                "name": "Default Param",
+                "algId": "14",
+                "value": "0"
+            },
+            {
+                "name": "index",
+                "algId": "15",
+                "value": "3"
+            }
+        ],
+        "Heavy": [
+            {
+                "name": "Mix",
+                "algId": "0",
+                "value": "1"
+            },
+            {
+                "name": "Decay",
+                "algId": "1",
+                "value": "2"
+            },
+            {
+                "name": "LateVol",
+                "algId": "2",
+                "value": "3"
+            },
+            {
+                "name": "EarlyVol",
+                "algId": "3",
+                "value": "4"
+            },
+            {
+                "name": "HiDamp",
+                "algId": "4",
+                "value": "5"
+            },
+            {
+                "name": "Low Damp",
+                "algId": "5",
+                "value": "6"
+            },
+            {
+                "name": "Low Pass FC",
+                "algId": "6",
+                "value": "7"
+            },
+            {
+                "name": "Low Pass Q",
+                "algId": "7",
+                "value": "8"
+            },
+            {
+                "name": "Hi Pass FC",
+                "algId": "8",
+                "value": "9"
+            },
+            {
+                "name": "Hi Pass Q",
+                "algId": "9",
+                "value": "10"
+            },
+            {
+                "name": "Trail",
+                "algId": "10",
+                "value": "11"
+            },
+            {
+                "name": "Freeze",
+                "algId": "11",
+                "value": "12"
+            },
+            {
+                "name": "Mod Depth",
+                "algId": "12",
+                "value": "13"
+            },
+            {
+                "name": "Mod Speed",
+                "algId": "13",
+                "value": "14"
+            },
+            {
+                "name": "Default Param",
+                "algId": "14",
+                "value": "15"
+            },
+            {
+                "name": "index",
+                "algId": "15",
+                "value": "4"
+            }
+        ]
+    }
+}

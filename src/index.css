@@ -1,0 +1,348 @@
+:root {
+  --bg-primary: #0e1118;
+  --bg-secondary: #161922;
+  --bg-tertiary: #1f2330;
+  --bg-card: rgba(22, 25, 34, 0.85);
+  --bg-metal: #181b24;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-highlight: rgba(255, 255, 255, 0.18);
+  --border-bezel: rgba(0, 0, 0, 0.7);
+  
+  /* PocketLab Core Color Tokens */
+  --accent-amber: #f59e0b;
+  --accent-amber-glow: rgba(245, 158, 11, 0.45);
+  --accent-cyan: #06b6d4;
+  --accent-cyan-glow: rgba(6, 182, 212, 0.45);
+  --accent-green: #10b981;
+  --accent-green-glow: rgba(16, 185, 129, 0.45);
+  --accent-red: #ef4444;
+  --accent-red-glow: rgba(239, 68, 68, 0.45);
+  --accent-purple: #8b5cf6;
+  --accent-purple-glow: rgba(139, 92, 246, 0.45);
+  --accent-magenta: #ec4899;
+  --accent-magenta-glow: rgba(236, 72, 153, 0.45);
+
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+
+  --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-numbers: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --valeton-shadow: 0 14px 28px rgba(0, 0, 0, 0.7), 0 6px 12px rgba(0, 0, 0, 0.5);
+  --bevel-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.15), inset 0 -2px 5px rgba(0, 0, 0, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  background-image: 
+    radial-gradient(circle at 50% 25%, rgba(30, 36, 50, 0.45) 0%, rgba(10, 12, 18, 0.95) 100%),
+    url('/gp200/Background/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--text-main);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.32);
+}
+
+/* Studio Hardware Panel Styling */
+.valeton-chassis {
+  background: linear-gradient(180deg, rgba(28, 32, 44, 0.88) 0%, rgba(18, 20, 28, 0.95) 100%);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--valeton-shadow);
+  border-radius: 12px;
+}
+
+.valeton-bezel {
+  background: #11141c;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.9), 0 1px 1px rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--valeton-shadow);
+}
+
+.glass-modal {
+  background: #131622;
+  border: 1px solid #262c3d;
+  border-radius: 10px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.9);
+}
+
+/* Hardware LED Indicator */
+.led {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #334155;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.8);
+  transition: all 0.2s ease;
+}
+
+.led.led-amber {
+  background-color: var(--accent-amber);
+  box-shadow: 0 0 10px var(--accent-amber), inset 0 1px 2px rgba(255,255,255,0.7);
+}
+
+.led.led-green {
+  background-color: var(--accent-green);
+  box-shadow: 0 0 10px var(--accent-green), inset 0 1px 2px rgba(255,255,255,0.7);
+}
+
+.led.led-cyan {
+  background-color: var(--accent-cyan);
+  box-shadow: 0 0 10px var(--accent-cyan), inset 0 1px 2px rgba(255,255,255,0.7);
+}
+
+.led.led-red {
+  background-color: var(--accent-red);
+  box-shadow: 0 0 10px var(--accent-red), inset 0 1px 2px rgba(255,255,255,0.7);
+}
+
+.led.led-magenta {
+  background-color: var(--accent-magenta);
+  box-shadow: 0 0 10px var(--accent-magenta), inset 0 1px 2px rgba(255,255,255,0.7);
+}
+
+/* Studio Knurled Rotary Knob Component */
+.valeton-knob-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+  cursor: grab;
+}
+
+.valeton-knob-container:active {
+  cursor: grabbing;
+}
+
+.valeton-knob-dial {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #2a2e3d, #14161f);
+  box-shadow: 
+    0 8px 16px rgba(0, 0, 0, 0.7),
+    inset 0 1px 2px rgba(255, 255, 255, 0.25),
+    inset 0 -2px 5px rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.05s ease-out;
+}
+
+.valeton-knob-ring {
+  position: absolute;
+  inset: -6px;
+  pointer-events: none;
+}
+
+.valeton-knob-center {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 45% 45%, #1f2330, #0f1118);
+  box-shadow: 
+    inset 0 2px 5px rgba(0, 0, 0, 0.9),
+    0 1px 1px rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-numbers);
+  font-size: 11px;
+  font-weight: 800;
+  color: #f1f5f9;
+}
+
+.valeton-knob-indicator {
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  top: 4px;
+  border-radius: 2px;
+  box-shadow: 0 0 6px currentColor;
+}
+
+/* Valeton Pedalboard Footswitch Styling */
+.valeton-footswitch {
+  position: relative;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 40%, #3e4459, #1a1c27);
+  border: 2px solid #525a73;
+  box-shadow: 
+    0 8px 16px rgba(0, 0, 0, 0.75),
+    inset 0 2px 3px rgba(255, 255, 255, 0.35),
+    inset 0 -3px 6px rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.12s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.valeton-footswitch:hover {
+  border-color: #6d7899;
+  transform: translateY(-1px);
+}
+
+.valeton-footswitch:active {
+  transform: translateY(2px) scale(0.96);
+  box-shadow: 
+    0 2px 6px rgba(0, 0, 0, 0.9),
+    inset 0 3px 6px rgba(0, 0, 0, 0.85);
+}
+
+.valeton-footswitch.active {
+  border-color: var(--accent-amber);
+  box-shadow: 
+    0 0 20px var(--accent-amber-glow),
+    0 6px 14px rgba(0, 0, 0, 0.8),
+    inset 0 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.valeton-footswitch-ring {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.valeton-footswitch.active .valeton-footswitch-ring {
+  border-color: var(--accent-amber);
+  box-shadow: 0 0 12px var(--accent-amber-glow);
+}
+
+/* Valeton Effect Chain Pedal Card */
+.gp200-chain-block {
+  position: relative;
+  width: 98px;
+  height: 126px;
+  padding: 8px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background: linear-gradient(180deg, rgba(26, 29, 39, 0.9) 0%, rgba(15, 17, 24, 0.96) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.65), var(--bevel-shadow);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+}
+
+.gp200-chain-block:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.75);
+}
+
+.gp200-chain-block.selected {
+  border-color: var(--accent-amber);
+  box-shadow: 
+    0 0 20px var(--accent-amber-glow),
+    0 10px 22px rgba(0, 0, 0, 0.8),
+    var(--bevel-shadow);
+  background: linear-gradient(180deg, rgba(38, 34, 30, 0.95) 0%, rgba(18, 17, 16, 0.98) 100%);
+}
+
+.gp200-chain-block.bypassed {
+  opacity: 0.55;
+  filter: grayscale(0.5);
+}
+
+/* Signal routing connector line */
+.cable-line {
+  height: 4px;
+  background: #2b3142;
+  position: relative;
+  flex: 1;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.cable-line.active {
+  background: linear-gradient(90deg, #06b6d4, #f59e0b);
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.6);
+}
+
+/* Animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.05);
+  }
+}
+
+.pulse-anim {
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+@keyframes signalFlow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

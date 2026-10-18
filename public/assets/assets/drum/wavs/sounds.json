@@ -1,0 +1,56 @@
+{
+    "wavs": [
+        {
+            "wavName": "909 Kick.wav",
+            "note": 35
+        },
+        {
+            "wavName": "Kick.wav",
+            "note": 36
+        },
+        {
+            "wavName": "Rim.wav",
+            "note": 37
+        },
+        {
+            "wavName": "909 Snare.wav",
+            "note": 38
+        },
+        {
+            "wavName": "Clap.wav",
+            "note": 39
+        },
+        {
+            "wavName": "Snare.wav",
+            "note": 40
+        },
+        {
+            "wavName": "HH Closed.wav",
+            "note": 42
+        },
+        {
+            "wavName": "909 HH Open.wav",
+            "note": 44
+        },
+        {
+            "wavName": "HH Open.wav",
+            "note": 46
+        },
+        {
+            "wavName": "Ride.wav",
+            "note": 51
+        },
+        {
+            "wavName": "Tambourine.wav",
+            "note": 54
+        },
+        {
+            "wavName": "Cowbell.wav",
+            "note": 56
+        },
+        {
+            "wavName": "Cabasa.wav",
+            "note": 69
+        }
+    ]
+}

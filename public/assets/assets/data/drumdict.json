@@ -1,0 +1,618 @@
+{
+    "Blues": [
+        {
+            "File Name": "37 Blues 1",
+            "Display": "Blues 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "38 Blues 2",
+            "Display": "Blues 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "39 Blues 3",
+            "Display": "Blues 3",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "40 Blues 4",
+            "Display": "Blues 4",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "41 Swing",
+            "Display": "Swing",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "42 Shuffle 44",
+            "Display": "Shuffle ",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "43 Shuffle 34",
+            "Display": "Shuffle 3/4",
+            "Time Signature": "3/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "44 Bluegrass",
+            "Display": "Bluegrass",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "45 Country",
+            "Display": "Country",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "46 Country Folk",
+            "Display": "Folk",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        }
+    ],
+    "Electronic": [
+        {
+            "File Name": "62 Electro 1",
+            "Display": "Electro 1 ",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "63 Electro 2",
+            "Display": "Electro 2 ",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "66 Electronic Pop",
+            "Display": "Electronic Pop",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "64 Techno",
+            "Display": "Techno ",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "65 Trip Hop",
+            "Display": "Trip-Hop ",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "67 Break Beat",
+            "Display": "Break Beat",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "68 D&B",
+            "Display": "Drum&Bass",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        }
+    ],
+    "Funk": [
+        {
+            "File Name": "30 Funk 1",
+            "Display": "Funk 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "31 Funk 2",
+            "Display": "Funk 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "32 Funk 3",
+            "Display": "Funk 3",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "33 Funk 4",
+            "Display": "Funk 4",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "34 Jazz Funk 1",
+            "Display": "Jazz Funk 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "35 Jazz Funk 2",
+            "Display": "Jazz Funk 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "36 Jazz Funk 3",
+            "Display": "Jazz Funk 3",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        }
+    ],
+    "Jazz": [
+        {
+            "File Name": "55 Jazz 1",
+            "Display": "Jazz 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "56 Jazz 2",
+            "Display": "Jazz 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "57 Jazz 3",
+            "Display": "Jazz 3",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "58 Jazz 4",
+            "Display": "Jazz 4",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "59 Bossanova 1",
+            "Display": "Bossa Nova 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "60 Bossanova 2",
+            "Display": "Bossa Nova 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "61Fusion",
+            "Display": "Fusion",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        }
+    ],
+    "Metro": [
+        {
+            "File Name": "90 Metro 14",
+            "Display": "1/4",
+            "Time Signature": "1/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "91 Metro 24",
+            "Display": "2/4",
+            "Time Signature": "2/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "92 Metro 34",
+            "Display": "3/4",
+            "Time Signature": "3/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "93 Metro 44",
+            "Display": "4/4",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "94 Metro 54",
+            "Display": "5/4",
+            "Time Signature": "5/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "95 Metro 64",
+            "Display": "6/4",
+            "Time Signature": "6/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "96 Metro 74",
+            "Display": "7/4",
+            "Time Signature": "7/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "97 Metro 68",
+            "Display": "6/8",
+            "Time Signature": "6/8",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "98 Metro 78",
+            "Display": "7/8",
+            "Time Signature": "7/8",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "99 Metro 98",
+            "Display": "9/8",
+            "Time Signature": "9/8",
+            "Default Tempo": "120BPM"
+        }
+    ],
+    "Pop": [
+        {
+            "File Name": "47Pop 1",
+            "Display": "Pop 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "48 Pop 2",
+            "Display": "Pop 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "49 Pop 3",
+            "Display": "Pop 3",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "50 Hip Hop 1",
+            "Display": "Hip-Hop 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "51 Hip Hop 2",
+            "Display": "Hip-Hop 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "52 Hip Hop 3",
+            "Display": "Hip-Hop 3",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "53 Hip Hop Rock",
+            "Display": "Hip-Hop Rock",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "54 Pub",
+            "Display": "Pub",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        }
+    ],
+    "Rock": [
+        {
+            "File Name": "01 Rock 2",
+            "Display": "Rock 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "00 Rock 1",
+            "Display": "Rock 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "06 Hard Rock 1",
+            "Display": "Rock 3",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "07 Hard Rock 2",
+            "Display": "Rock 4",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "03 Classic Rock",
+            "Display": "Rock 5",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "02 Rock n' Roll",
+            "Display": "Classic Rock 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "04 Rock Ballad",
+            "Display": "Classic Rock 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "05 Rock Shuffle",
+            "Display": "Classic Rock 3",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "08 Hard Rock 3",
+            "Display": "Hard Rock",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "12 Garage Rock",
+            "Display": "Garage Rock",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "13 Prog Rock",
+            "Display": "Prog Rock",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "14 Surfin",
+            "Display": "Surf Rock",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "29 Rock 54",
+            "Display": "Rock 5/4",
+            "Time Signature": "5/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "09 Post Rock 1",
+            "Display": "Post Rock 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "10 Post Rock 2",
+            "Display": "Post Rock 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "11 Post Rock 3",
+            "Display": "Post Rock 3",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "15 Punk 1",
+            "Display": "Punk 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "16 Punk 2",
+            "Display": "Punk 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "17 Punk 3",
+            "Display": "Punk 3",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "18 Punk 5",
+            "Display": "Punk 4",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "26 Emo Core",
+            "Display": "EMO",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "27 Grunge",
+            "Display": "Grunge",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "28 New Wave",
+            "Display": "New Wave",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "19 Post Punk 1",
+            "Display": "Post Punk 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "20 Post Punk 2",
+            "Display": "Post Punk 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "25 Hardcore",
+            "Display": "Hardcore",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "21 Metal 1",
+            "Display": "Metal 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "22 Metal 2",
+            "Display": "Metal 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "23 Nu-Metal 1",
+            "Display": "Nu-Metal 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "24 Nu-Metal 2",
+            "Display": "Nu-Metal 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        }
+    ],
+    "World": [
+        {
+            "File Name": "70 Latin 2",
+            "Display": "Latin 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "69 Latin 1",
+            "Display": "Latin 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "71 Latin 3",
+            "Display": "Latin 3",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "72 Latin Pop 1",
+            "Display": "Latin Pop 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "73 Latin Pop 2",
+            "Display": "Latin Pop 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "74 Samba",
+            "Display": "Samba",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "75 Tango",
+            "Display": "Tango",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "76 Beguine",
+            "Display": "Beguine",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "76 Ska",
+            "Display": "Ska",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "78 Polka",
+            "Display": "Polka",
+            "Time Signature": "2/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "79 Waltz",
+            "Display": "Waltz",
+            "Time Signature": "3/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "80 Reggae 1",
+            "Display": "Reggae 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "81 Reggae 2",
+            "Display": "Reggae 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "82 Mazurke",
+            "Display": "Mazuke",
+            "Time Signature": "3/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "83 Musette",
+            "Display": "Musette",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "84 Army March",
+            "Display": "March 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "85 March 1",
+            "Display": "March 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "86 March 2",
+            "Display": "March 3",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "87 New Age 1",
+            "Display": "New Age 1",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "88 New Age 2",
+            "Display": "New Age 2",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        },
+        {
+            "File Name": "89 World",
+            "Display": "World",
+            "Time Signature": "4/4",
+            "Default Tempo": "120BPM"
+        }
+    ]
+}
