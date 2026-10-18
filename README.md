@@ -5,7 +5,21 @@
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](package.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-success.svg)](https://github.com/Wrdn28/pocketlab)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-pocketlab--two.vercel.app-00dfa2.svg?logo=vercel&logoColor=white)](https://pocketlab-two.vercel.app/)
 [![Author](https://img.shields.io/badge/Author-hirokixd-orange.svg)](https://github.com/Wrdn28)
+
+---
+
+<p align="center">
+  <a href="https://pocketlab-two.vercel.app/" target="_blank" rel="noopener noreferrer">
+    <img src="screenshot.png" alt="PocketLab Studio Desktop Interface" width="100%" style="border-radius: 8px; box-shadow: 0 8px 30px rgba(0,0,0,0.5);" />
+  </a>
+</p>
+
+<p align="center">
+  <b><a href="https://pocketlab-two.vercel.app/">Launch Live Web App (Demo)</a></b> • 
+  <b><a href="https://github.com/Wrdn28/pocketlab">GitHub Repository</a></b>
+</p>
 
 ---
 
@@ -23,6 +37,9 @@
 ## Overview
 
 **PocketLab** is an authentic, studio-grade desktop software editor designed specifically for the **Sonicake Pocket Master (QME-20)** multi-effects processor. 
+
+- **Live Web Demo**: [https://pocketlab-two.vercel.app/](https://pocketlab-two.vercel.app/) *(Supports Web MIDI and Web Bluetooth in Chrome, Edge, and Brave)*
+- **Desktop Application**: Standalone Electron app for Windows, Linux, and macOS.
 
 While official mobile companion apps provide basic tone adjustments on small touchscreens, PocketLab delivers a complete desktop workstation experience for musicians and producers, providing granular, real-time control over their hardware pedal via USB MIDI or Bluetooth Low Energy (BLE).
 
