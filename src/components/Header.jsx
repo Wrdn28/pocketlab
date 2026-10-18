@@ -52,60 +52,33 @@ export default function Header({
       minHeight: '54px',
       zIndex: 20
     }}>
-      {/* Brand: Clean Industrial PocketLab Badge with Studio DSP Emblem */}
+      {/* Brand: Clean Industrial PocketLab Typography Badge */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
         <div style={{
           background: 'linear-gradient(180deg, #141824 0%, #0c0e15 100%)',
-          padding: '6px 14px 6px 9px',
+          padding: '6px 14px',
           borderRadius: '8px',
           border: '1px solid rgba(255, 255, 255, 0.12)',
-          boxShadow: '0 4px 14px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.1)',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '11px'
+          boxShadow: '0 4px 14px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.1)'
         }}>
-          {/* Studio Audio DSP / Tube Waveform Emblem */}
           <div style={{
-            width: '32px',
-            height: '32px',
-            borderRadius: '6px',
-            background: 'linear-gradient(135deg, #1c2234 0%, #0d1017 100%)',
-            border: '1px solid rgba(245, 158, 11, 0.45)',
-            boxShadow: '0 0 10px rgba(245, 158, 11, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.15)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            flexShrink: 0
+            fontFamily: 'var(--font-display)',
+            fontWeight: 900,
+            fontSize: '15px',
+            letterSpacing: '2px',
+            color: '#f8fafc',
+            lineHeight: 1.1
           }}>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 14V10" stroke="#f59e0b" strokeWidth="2.2" strokeLinecap="round" />
-              <path d="M8 17V7" stroke="#fbbf24" strokeWidth="2.2" strokeLinecap="round" />
-              <path d="M12 21V3" stroke="#38bdf8" strokeWidth="2.4" strokeLinecap="round" />
-              <path d="M16 17V7" stroke="#fbbf24" strokeWidth="2.2" strokeLinecap="round" />
-              <path d="M20 14V10" stroke="#f59e0b" strokeWidth="2.2" strokeLinecap="round" />
-            </svg>
+            POCKETLAB
           </div>
-
-          <div>
-            <div style={{
-              fontFamily: 'var(--font-display)',
-              fontWeight: 900,
-              fontSize: '15px',
-              letterSpacing: '2px',
-              color: '#f8fafc',
-              lineHeight: 1.1
-            }}>
-              POCKETLAB
-            </div>
-            <div style={{
-              fontSize: '9px',
-              color: '#94a3b8',
-              letterSpacing: '1px',
-              fontWeight: 700,
-              marginTop: '2px'
-            }}>
-              SONICAKE POCKET MASTER
-            </div>
+          <div style={{
+            fontSize: '9px',
+            color: '#94a3b8',
+            letterSpacing: '1px',
+            fontWeight: 700,
+            marginTop: '2px'
+          }}>
+            SONICAKE POCKET MASTER
           </div>
         </div>
       </div>
